@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new.css">
+  <title>Happy Birthday!</title>
+  <!-- Link to external CSS stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎉 Happy Birthday Mylovee! 🎂</h1>
+    <p>Happy 18th to the one who holds my heart! You deserve the absolute world today and every day. Let's make this year unforgettable.✨</p>
+    <button onclick="celebrate()">Celebrate! 🥳</button>
+  </div>
+
+  <!-- Confetti JS Library -->
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    function celebrate() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }
+  </script>
+</body>
+</html>
